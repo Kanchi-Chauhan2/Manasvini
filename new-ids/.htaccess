@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?idesignspaces\.in
+RewriteRule ^(.*)$ https://www.idesignspaces.in/$1 [R,L]
